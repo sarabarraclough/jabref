@@ -24,7 +24,7 @@ class FieldWriterTests {
     }
     
     @Test
-    void preserveNewlineInAbstractField() throws Exception {
+    void includeNewlineInAbstractField() throws Exception {
         String text = "lorem ipsum lorem ipsum" + OS.NEWLINE + "lorem ipsum lorem ipsum";
 
         String result = writer.write(StandardField.ABSTRACT, text);
